@@ -1,7 +1,6 @@
 package com.logica;
 
-public class Calculadora {	
-	
+public class Calculadora {
 	
 	public Integer soma(Integer num1, Integer num2) {
 		Integer total = num1 + num2;
@@ -41,7 +40,20 @@ public class Calculadora {
 		else {
 			maior = num1;
 		}
-		return maior;
+		return maior;		
+	}
+	
+	public Integer fatorial(Integer valor) {
+		Integer fatorial = 1;
 		
+		if (valor < 0) {
+			fatorial = 0;
+		}
+		else {
+			for (int i = 1; i <= valor; i++) {
+				fatorial = fatorial * i;
+			}			
+		}
+		return fatorial;				
 	}
 }
